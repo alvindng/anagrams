@@ -9,6 +9,6 @@ describe('the user input path', {:type => :feature}) do
     fill_in('word', :with => 'fox')
     fill_in('anagram', :with => 'ofx')
     click_button('Anagram?')
-    expect(page).to have_content(true)
+    expect(page).to have_content('YA')
   end
 end
